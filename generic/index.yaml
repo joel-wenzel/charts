@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  generic:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-04-22T12:49:43.530337-05:00"
+    description: A Helm chart for Kubernetes
+    digest: d0a7e5a7d718ef1f3351cf300f73684bdf21abbb9b9bd3ca27edae3a9b57d5bc
+    name: generic
+    urls:
+    - https://github.com/joel-wenzel/charts/generic/generic-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-04-22T12:49:43.5283305-05:00"
