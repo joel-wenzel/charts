@@ -10,7 +10,7 @@ image:
   pullPolicy: IfNotPresent
   containerPort: 8099
 
-imagePullSecrets: [ocirsecret]
+imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
