@@ -16,8 +16,10 @@ spec:
         app.kubernetes.io/name: {{ include "generic.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+    {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
-        - name: ocirsecret 
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
       serviceAccountName: {{ template "generic.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
